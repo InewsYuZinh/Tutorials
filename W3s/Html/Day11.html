@@ -1,0 +1,82 @@
+<!-- Day 11     30/3/2022 -->
+<!Doctype html>
+<html>
+<head>
+	<title>Day 11 &ensp;:&ensp; 30/3/2022</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <style>
+        .City{color:red; font-weight: bold; text-decoration: none; }
+        .Main{color: royalblue;}        
+        .Btn1{background-color: aquamarine; border-radius: 5px;font-weight: bold;}
+        #City{color: rgb(228, 115, 134); font-weight: bold;}
+</style>
+</head>
+
+
+<body>
+    <h1>Lesson 16 : Block Inline</h1>
+    <h4>The div element</h4>
+    <div style="background-color:black; color:white; padding:20px;">
+        <h2>London</h2>
+        <p>London is the capital city of England. It is the most popolous city in the United Kingdom,<br>with a metropolitan area of over 13 million inhabitants</p>
+    </div>
+    <ul>
+        Above div element is often used as a container for other html element <br>
+        It has no required attribute, but <b>style, class, id</b> are common. <br>
+        Used to style blocks of content
+    </ul>
+    
+    <h4>The span element</h4>
+    <p>My mother has <span style="color:blue; font-weight: bold;">blue</span> eyes and my father has <span style="color:darkolivegreen; font-weight: bold;">dark green</span> eyes</p>
+    <!-- Content the span element -->
+    <ul>
+        the span element has no required attribute, but <b>style, class, id</b> are common <br>
+        span element can be used to style parts of the text:
+    </ul>
+    <h2>Ok L16 success</h2>
+
+    <h1>Lesson 17 : Class</h1>
+    <h4>Html class Attribute</h4>
+    <h5><mark>Using The Class Attribute</mark></h5>
+    ...
+    <h5><mark>The Syntax For Class</mark></h5>
+    <abbr title="ĐNA" class="City">
+        <p>China</p>
+        <p>Japan</p>
+        <p>VietNam</p>
+    </abbr>
+    <h5><mark>Multiple Class</mark></h5>
+    <abbr title="NATO" class="City Main">
+        <p>London</p>
+    </abbr>
+    <abbr title="ĐNA" class="City">
+        <p>Japan</p>
+        <p>VietNam</p>
+    </abbr>
+    <h5><mark>Different Element Can Share Same Class</mark></h5>
+    <h5 class="City">Paris</h5>
+    <p class="City">Paris is the captial of France</p>
+    <button onclick="myFuntion()" class="Btn1">Hide Element Class City</button>
+
+<script>
+    function myFuntion(){
+        var x = document.getElementsByClassName("City");
+        for (var i=0 ; i < x.length; i++){
+            x[i].style.display = "none"; 
+        }
+    }
+</script>
+    <h2>ok L17 s</h2>
+
+    <h1>Lesson 18 : Id</h1>
+    <h5><mark>using The Id Attribute</mark></h5>
+    <h5><mark>Diffence Betweeb Class and Id</mark></h5>
+    <p id="City">My City</p>
+    <p class="City">London</p>
+    <p class="City">Japan</p>
+    <p class="City">Tokyo</p>
+<br><i><h5> time onstream w3s : 21h + 2h
+<br> All TIME COURSE : 23h
+<br><a style="color: red">status: off</a></h5></i>
+</body>
+</html>

@@ -1,0 +1,144 @@
+<!-- Day 8     26/3/2022 -->
+<!Doctype html>
+<html>
+<head>
+	<title>Day 8 &ensp;:&ensp; 26/3/2022</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+	<style>
+		.Tb1, .Tb1 th, .Tb1 td{border: 1px solid black; width: 30%; height:30px;}
+		.Th1 th, Th1 td{padding: 15px;}
+		.Tb2, .Tb2 th, .Tb2 td{border: 1px solid black; width: 30%; height:30px;}
+		.Tb2{border-spacing: 30px;}
+		.Tb3, .Tb3 th, .Tb3 td{border: 1px solid black; width: 30%; height:30px;}
+		.Tb4, .Tb4 th, .Tb4 td{padding:20px;}
+		.Tb4 tr:nth-child(even){background-color: deepskyblue;}
+		.Tb4 tr:hover{background-color:aqua;}
+		.Tb4 th:nth-child(odd), .Tb4 td:nth-child(odd){background-color: pink}
+		.Tb4 th:hover, .Tb4 td:hover{background-color: aqua;}
+	</style>
+</head>
+
+
+<body>
+	<h1>Lesson 14 : Html Table</h1>
+
+	<h3>Html Table Padding & Spacing</h3>
+	<h4>Html Table-Cell Padding</h4>
+	<table class="Tb1">
+		<tr>
+			<th></th>
+			<th></th>
+		</tr>
+		<tr>
+			<td></td>
+			<td></td>
+		</tr>
+	</table>
+	<p>
+		th, td{
+			padding:15px;
+		}
+	</p>
+	<h5>add padding top, bottom, left, right</h5>
+	<p>
+		th, td{<br>
+			padding-top: 10px;<br>
+			padding-bottom: 10px;<br>
+			padding-left: 10px;<br>
+			padding-riight: 10px;<br>
+		}
+	</p>
+	<h4>Html Table - Cell Spacing</h4>
+	<table class="Tb2">
+		<tr>
+			<th></th>
+			<th></th>
+		</tr>
+		<tr>
+			<td></td>
+			<td></td>
+		</tr>
+	</table>
+	<p>above use <b>border-spacing</b> in css to change the space between table cells</p>
+	
+	
+	<br>
+	<h3>Html Table Colspan & Rowspan</h3>
+	<h4>Html Table - Colspan</h4>
+	<table class="Tb3">
+		<tr>
+			<th colspan="2">Name</th>
+			<th></th>
+		</tr>
+		<tr>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+	
+	<table class="Tb3">
+		<tr>
+			<th rowspan="2">April</th>
+			<th></th>
+			<th></th>
+		</tr>
+		<tr>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+	</table>
+	<table class="Tb3">
+		<tr>
+			<th colspan="3">2020</th>
+		</tr>
+		<tr>
+			<th colspan="2" rowspan="2">Fiesta</th>
+			<td></td>
+		</tr>
+		<tr>
+			<td></td>
+		</tr>
+	</table>
+	<p>above use <b>colspan, rowspan</b> -> multiple rows/or columns</p>
+	
+
+	<br>
+	<H3>Table Styling</H3>
+	<h4>Html Table - Zebra Stripes</h4>
+	<table class="Tb4">
+		<tr><td>1</td><td>2</td><td>3</td><td>4</td></tr>
+		<tr><th>0</th><th>2</th><th>0</th><th>6</th></tr>
+		<tr><td>5</td><td>6</td><td>7</td><td>8</td></tr>
+		<tr><th>0</th><th>2</th><th>0</th><th>6</th></tr>
+	</table>
+	<p> <mark>above use</mark>  
+		<br><b>tr:nth-child(even){} .
+		<br> th:nth-child(odd){} .
+		<br> td:nth-child(odd){}</b> .
+		<br><mark>With:</mark><br>
+		&nbsp;&nbsp;<b>odd</b> instead 1,3,5.<br>
+		&nbsp;&nbsp;<b>even</b> instead 2,4,6.<br>
+		<b>tr:hover{} .</b><br> 
+		<b>th:hover{} .</b><br>
+		<b>td:hover{} .</b>
+	</p>
+	<br>
+
+
+	<h3></h3>
+
+<br><i><h5> time onstream w3s : 15h + 2h
+<br> All TIME COURSE : 17h
+<br><a style="color:green">status: on</a></h5></i>
+</body>
+</html>

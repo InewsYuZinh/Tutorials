@@ -1,0 +1,96 @@
+<!-- Day 11     30/3/2022 -->
+<!Doctype html>
+<html>
+<head>
+	<title>Day 12 &ensp;:&ensp; 31/3/2022</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <script src="https://unpkg.com/boxicons@2.1.2/dist/boxicons.js"></script>
+    <style>
+        .City{color:red; font-weight: bold; text-decoration: none; }
+        .Main{color: royalblue;}        
+        .Btn1{background-color: aquamarine; border-radius: 5px;font-weight: bold;}
+        #MyHeader{color: rgb(228, 115, 134); font-weight: bold;}
+        .Div_footer{ background-color: bisque;border-radius: 6px; width: 100px;
+        margin-top: 50px;}
+        #Btn_return{font-family: Hack NF; text-decoration: none; color:white; text-align: center; }
+        #Btn_return:hover{color: red;}
+        /* #Back{} */
+        /* .demo{color:limegreen} */
+</style>
+</head>
+
+
+<body>
+    <h1>Lesson 18 : Id</h1>
+    <h5><mark>using The Id Attribute</mark></h5>
+    ...
+    <h5><mark>Diffence Betweeb Class and Id</mark></h5>
+    <h3 id="MyHeader">My City</h3>
+    <p class="City">London</p>
+    <p class="City">Japan</p>
+    <p class="City">Tokyo</p>
+  
+    <h5><mark>Html Bookmarks With Id And Links</mark></h5>
+    <h3 id="C4">Chapter 4</h3>
+    <a href="#C4">Jump to chapter 4</a>
+    <br><br>
+    <button onclick="displayResult()">Reiner</button>
+
+    <h5><mark>Using The Id Attribute In Js</mark></h5>
+    <script>
+        function displayResult(){
+        document.getElementById("MyHeader").innerHTML = "Have a nice day!"
+        }
+    </script>
+
+ 
+    <h2>Ok L18 success</h2>
+    <br>
+
+    <h1>Lesson 19 : Html Iframe</h1>
+    <h4>Html Iframe Syntax</h4>
+    <p>
+    < iframe src="url" title="description" frameborder="0"> < /iframe>
+    </p>
+    <h4>Iframe set Height And Width</h4>    
+    <iframe src="Demo_Iframe.htm" width="30%" height="300" title="Ifame Example" ></iframe>
+
+    <h4>Remove Border Iframe</h4>
+    <!--  -->
+    <p>using style</p>
+
+    <h4>Iframe - Target For a Link</h4>
+    <iframe src="Demo_Iframe.htm" name="iframe_a"  style="border: 1px solid black; width: 50%;"></iframe>
+    <p><a href="https://www.w3shools.com" target="iframe_a">W3schools</a></p>
+    <!--Content Target Link Iframe   -->
+   <p>Link W3s with a, target="nameIframe" open website in Iframe <br>
+      can't restyle iframe.htm in iframe element.
+    </p>
+    <h2></h2>
+    <br>
+
+    <h1>Lesson 20 : JS</h1>
+    <button type="button" onclick="document.getElementById('demo').innerHTML = Date()">Date & Time</button>
+    <p id="demo"></p>
+    
+    <h4>A Taste Of JavaScript</h4>
+    <script>
+        document.getElementById("demo").innerHTML = "Hello Js"
+    </script>
+
+
+
+
+
+
+    <!-- Fix after -->
+    <div class="Div_footer">
+        <box-icon id="Back" name='arrow-back'></box-icon>
+        <a href="Super.html" id="Btn_return" > Super</a>
+    </div>
+    
+<br><i><h5> time onstream w3s : 23h + 2h
+<br> All TIME COURSE : 25h
+<br><a style="color: red">status: off</a></h5></i>
+</body>
+</html>

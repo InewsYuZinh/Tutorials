@@ -1,0 +1,300 @@
+<!-- Day 7     24/3/2022 -->
+<!Doctype html>
+<html>
+<head>
+	<title>Day 7 &ensp;:&ensp; 24/3/2022</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <style> .tb1, .tb1 th, .tb1 td{border: 1px solid black; border-collapse: collapse;}
+            .tb2, .tb2 th, .tb2 td{border: 1px solid white; width: 30%; height: 30px;}
+            .tb3, .tb3 td{border: 1px solid black; width: 30%;height: 30px;border-radius: 10px;}
+            .tb4, .tb4 td{width: 30%; height:30px;}
+            .tb4 td{border: 1px solid black; border-radius: 10px; }
+            .tb5, .tb5 td{border-style: dotted; width: 30%; height: 30px; border-collapse:collapse;} 
+            .tb6, .tb6 td{border: 1px solid; width: 30%; height: 30px; border-collapse: collapse;}
+            .tb6 td{border-color: deepskyblue;}
+            .tb7, .tb7 th, .tb7 td{border: 1px solid black; height: 30px; border-collapse:collapse;}
+            .tb8, .tb8 th, .tb8 td{border: 1px solid black; height: 30px; border-collapse:collapse;}
+            .tb9, .tb9 th, .tb9 td{border: 1px solid black; height: 30px; border-collapse:collapse;}
+            .tb10, .tb10 th, .tb10 td{border: 1px solid black; height: 30px; border-collapse:collapse;}
+</style>
+</head>
+
+
+<body>
+    <h2>Ok L14 P1 success </h2>
+    <br>
+    <h1>Lesson 14 : HTML Tables P2</h1>
+
+
+    <h4>Tag Table P2</h4>
+    <table class="tb1">
+        <caption>This is caption in table</caption>
+        <colgroup>
+        <col span="2" style="background-color: deepskyblue;">
+        <col style="background-color: blue;">
+        </colgroup>
+        <thead>
+            <tr>
+                <th>1</th>
+                <th>2</th>
+            </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <th>this is <b>th</b> header tab 1</th>
+            <th>this is <b>th</b> header tab 2</th>
+        </tr>
+        </tbody>
+        <tfoot>
+        <tr>
+            <td>this is <b>td</b> cell tab 1</td>
+            <td>this is <b>td</b> cell tab 2</td>
+        </tr>
+        </tfoot>
+    </table>
+    <!-- Contain tag table p2  -->
+    <p> above <b>colgroup & col tag</b> used to add <b>cols tag</b> and attribute <b>span,style</b> in table </p>
+    <p> there are also <b>thead, tbody, tfoot tag</b></p>
+    
+    <br>
+    <h3>Table Borders</h3>
+    <h4>Html Table Borders</h4>
+    <h5><mark>How to add a border</mark></h5>
+    <p>
+        table, th, td{
+            border: 1px soid black;
+        }
+    </p>
+
+    <h5><mark>Collapsed Table Borders</mark></h5>
+    <p>
+        table, th, td{
+            border-collapsed: collapse;
+        }
+    </p>
+
+    <h5><mark>Style Table Border</mark></h5>
+    <table class="tb2">
+        <col span="3" style="background-color: deepskyblue;">
+        <tr>
+            <th></th>
+            <th></th>
+            <th></th>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+    </table>
+    <!-- Content Style Table Borders -->
+
+
+    <h5><mark>Round Table Borders</mark></h5>
+    <h6>border-radius</h6>
+    <table class="tb3">
+        <tr>
+            <div class="td1">
+                <td></td>
+                <td></td>
+                <td></td>
+            </div>
+        </tr>
+        <tr>
+            <div class="td1">
+                <td></td>
+                <td></td>
+                <td></td>
+            </div>
+        </tr>
+    </table>
+    <!-- Content Round Table Borders -->
+    <p>td{border-radius: 10px;}</p>
+    
+    <h6>skip the border around the table by leaving out</h6>
+    <table class="tb4">
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+    </table>
+
+    
+   <h5><mark>Dotted Table Borders</mark></h5>  
+    <table class="tb5">
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+    </table>
+    <!-- Content Dotted Table Borders -->
+    <p>The following value are allowed:</p>
+    <ul>
+        <li>dotted</li>
+        <li>dashed</li>
+        <li>solid</li>
+        <li>double</li>
+        <li>groov</li>
+        <li>ridge</li>
+        <li>inset</li>
+        <li>outset</li> 
+        <li>none</li>
+        <li>hidden</li>
+    </ul>
+    <p>td{border-style: dotted;}</p>
+
+    <h5><mark>Border Color</mark></h5>
+    <table class="tb6">
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+    </table>
+    <!-- Content Border Color -->
+    <p>
+        td{border-color: deepskyblue;}
+    </p>
+
+
+    <h3>Table Size</h3>
+    <h4>Htlm Table Sizes</h4>
+    <!-- Content Table Sizes -->
+
+    <h4>Html Table Width</h4>
+    <table class="tb7" style="width: 100%;">
+        <tr>
+            <th></th>
+            <th></th>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+        </tr>
+    </table>
+    <!-- Content Table Width -->
+
+    <h4>Html Table Column Width</h4>
+    <table class="tb8" style="width: 100%;">
+        <tr>
+            <th style="width: 70%;"></th>
+            <th></th>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+        </tr>
+    </table>
+    <!-- Content Table Column Width -->
+
+    <h4>Html Table Row Height</h4>
+    <table class="tb9" style="width: 100%;">
+        <tr>
+            <th></th>
+            <th></th>
+        </tr>
+        <tr>
+            <td style="height:200px;"></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+        </tr>
+    </table>
+    <!-- Content Content Table Row Height -->
+
+    <br>
+    <h3>Table Headers</h3>
+    <h4>Html Table Headers</h4>
+    <p>Html tables can have headers for each column or row, or for many columns/rows</p>
+
+    <h4>Html Table Headers</h4>
+    <table class="tb10">
+        <tr>
+            <th>Header1</th>
+            <th>Header2</th>
+            <th>Header3</th>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+    </table>
+    <!-- Contain Table Headers -->
+
+    <h4>Vertical Table Headers</h4>
+    <table class="tb10">
+        <tr>
+            <th>Header1</th>
+            <td>02</td>
+            <td>06</td>
+        </tr>
+        <tr>
+            <th>Header2</th>
+            <td>29</td>
+            <td>07</td>
+        </tr>
+    </table>
+    <!-- Content Vertical Table Headers -->
+
+    <h4>Align Table Headers</h4>
+    <!-- Contain Align Table Headers -->
+    <p>
+        th{text-align: left;}
+    </p>
+
+    <h4>Header For Multiple Columns</h4>
+    <table class="tb10">
+        <tr>
+            <th colspan="2">Header Multiple</th>
+            <th>Header3</th>
+        </tr>
+        <tr>
+            <td>02</td>
+            <td>06</td>
+            <td>2000</td>
+        </tr>
+    </table>
+    <!-- Contain Multiple For Headers Colomns -->
+
+    <h4>Table Caption</h4>
+    <table class="tb10">
+        <Caption>caption tag</Caption>
+        <tr>
+            <th>Header1</th>
+            <td>02</td>
+            <td>06</td>
+        </tr>
+        <tr>
+            <th>Header2</th>
+            <td>29</td>
+            <td>07</td>
+        </tr>
+    </table>
+
+
+
+<br><i><h5> time onstream w3s : 11h + 4h
+<br> All TIME COURSE : 15h
+<br><a style="color:red">status: off</a></h5></i>
+</body>
+</html>

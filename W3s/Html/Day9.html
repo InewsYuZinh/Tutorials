@@ -1,0 +1,208 @@
+<!-- Day 9     27/3/2022 -->
+<!Doctype html>
+<html>
+<head>
+	<title>Day 9 &ensp;:&ensp; 27/3/2022</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <style>
+     .Tb1,.Tb1 td,.Tb1 th{border: 1px solid black; border-collapse: collapse; font-size: 12px; height:30px;}
+     .Tb2{width: 50%}
+     .Tb2, .Tb2 th, .Tb2 td{border: 1px solid black; height: 30px; border-collapse:collapse;}
+    </style>
+</headd>
+
+
+<body>
+	<h1>Lesson 14 : Html Table </h1>
+    <h3>Table Colgroup</h3>
+
+    <h4>Html Table Colgroup</h4>
+    <table class="Tb1"  style="width: 30%;">
+        <colgroup>
+            <col span="2" style="background-color: aquamarine;">
+        </colgroup>
+        <tr>
+            <th>Mon</th>
+            <th>Tue</th>
+            <th>Wed</th>
+            <th>Thu</th>
+
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+            <td>4</td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>6</td>
+            <td>7</td>
+            <td>8</td>
+        </tr>
+    </table>
+
+    <h4>Legal Css Properties</h4>
+    <ul>
+        <li> <b>width</b>              <br>     </li>
+        <li>  <b>visitbility</b>      <br>  </li>
+        <li>  <b>background</b>       <br>  </li>
+        <li>  <b>border</b>           <br>   </li>
+    </ul>
+    
+    <h4>Multiple Col Elements</h4>
+    <table class="Tb2"> 
+        <colgroup>
+            <col span="3" style="background-color: aquamarine;">
+            <col span="2" style="background-color: pink;">
+        </colgroup>
+        <tr>
+            <th>Mon</th>
+            <th>Tue</th>
+            <th>Wed</th>
+            <th>Thu</th>
+            <th>Fri</th>
+            <th>Sat</th>
+            <th>Sun</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+            <td>4</td>
+            <td>5</td>
+            <td>6</td>
+            <td>7</td>
+        </tr>
+        <tr>
+            <td>8</td>
+            <td>9</td>
+            <td>10</td>
+            <td>11</td>
+            <td>12</td>
+            <td>13</td>
+            <td>14</td>
+        </tr>
+    </table>
+    <!-- Content Multiple Col Elements -->
+    <p>table above add <b>background-color:; </b> into the col span2, span3 tag</p>
+
+    <h4>Empty Colgroups</h4>
+    <table class="Tb2"> 
+        <colgroup>
+            <col span="3">
+            <col span="2" style="background-color: pink;">
+        </colgroup>
+        <tr>
+            <th>Mon</th>
+            <th>Tue</th>
+            <th>Wed</th>
+            <th>Thu</th>
+            <th>Fri</th>
+            <th>Sat</th>
+            <th>Sun</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+            <td>4</td>
+            <td>5</td>
+            <td>6</td>
+            <td>7</td>
+        </tr>
+        <tr>
+            <td>8</td>
+            <td>9</td>
+            <td>10</td>
+            <td>11</td>
+            <td>12</td>
+            <td>13</td>
+            <td>14</td>
+        </tr>
+    </table>
+    <!-- Content Empty Colgroups -->
+    <p>table above add <b> background-color:; </b> into the col span2 tag and empty col span3 tag</p>
+
+    <h4>Hide Columns</h4>
+    <table class="Tb2"> 
+        <colgroup>
+            <col span="3" style="background-color: aquamarine;">
+            <col span="2" style="background-color: pink; visibility: collapse;">
+        </colgroup>
+        <tr>
+            <th>Mon</th>
+            <th>Tue</th>
+            <th>Wed</th>
+            <th>Thu</th>
+            <th>Fri</th>
+            <th>Sat</th>
+            <th>Sun</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+            <td>4</td>
+            <td>5</td>
+            <td>6</td>
+            <td>7</td>
+        </tr>
+        <tr>
+            <td>8</td>
+            <td>9</td>
+            <td>10</td>
+            <td>11</td>
+            <td>12</td>
+            <td>13</td>
+            <td>14</td>
+        </tr>
+    </table>
+    <!-- Content Hide Columns -->
+    table above add <b>visibility:collapse;</b> into the col tag
+
+    <h2>Ok L14 success </h2>
+    <br>
+
+
+    <h1>Lesson 15 : Html List</h1>
+    
+    <h3>List</h3>
+    <h4>Unordered Html List</h4>
+    <ul>
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Milk</li>
+    </ul>
+    <!-- Content Unordered Html List -->
+    <p>above use ul, li tag. <br> <mark><small>li tag inside ul tag</small></mark>  </p>
+
+    <h4>Ordered Html List</h4>
+    <ol>
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Milk</li>
+    </ol>
+    <!-- Content Ordered Html List -->
+    <p>above use ol, li tag. <br> <mark><small>li tag inside ol tag</small></mark>  </p>
+
+    <h4>Html Description Lists</h4>
+    <dl>
+        <dt>Coffee</dt>
+        <dd>- black hot drink</dd>
+        <dt>Milk</dt>
+        <dd>- white cold drink</dd>
+    </dl>
+    <!-- Content Html Description List -->
+    <p>above use dl, dt dd tag. <br> <mark><small>dt dd tag inside dl tag & dd description for dt</small></mark>  </p>
+
+    :( Nay học ít wá aaaa. Ngủ thui Z.Z.Z.. mai học bù <br>
+    OFF
+    
+    <h3></h3>
+
+<br><i><h5> time onstream w3s : 17h + 1h
+<br> All TIME COURSE : 18h
+<br><a style="color: red">status: off </a></h5></i>
+</body>
+</html>
