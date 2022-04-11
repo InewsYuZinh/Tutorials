@@ -1,0 +1,35 @@
+15/3/2022
+provide: cung cấp
+specified: chỉ định
+come in: có trong
+pair likes: như cặp
+about: về
+above: ở trên
+Element: phần tử
+tag: thẻ
+Attribute: thuộc tính
+
+16/3/2022
+declare: khai báo
+course: khóa học 
+lowercase: chữ thường
+always: luôn 
+suggest: đề xuất
+quotes: ngoặc
+
+17/3/2022
+headings tiêu đề
+most important: quan trọng nhất
+least important: ít quan trọng 
+however: tuy nhiên 
+specify: chỉ định
+Paragraphs: đoạn
+ignores: không hiểu
+horizontal: nằm ngang
+Align: căn chỉnh
+below: phía dưới
+
+22/3/2022
+directly: trực tiếp
+required: yêu cầu, bắt buộc 
+provides: cung cấp
