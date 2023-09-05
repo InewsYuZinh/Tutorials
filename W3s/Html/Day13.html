@@ -2,17 +2,170 @@
 <!Doctype html>
 <html>
 <head>
-	<title>Day 6 &ensp;:&ensp; 23/3/2022</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Day 13 &ensp;:&ensp; 09/06/2023</title>
     <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <script src="https://unpkg.com/boxicons@2.1.2/dist/boxicons.js"></script>
+    <style>
+        #Footer-space{width: 100%; height: 80px;}
+        #Btn_return{background-color: bisque; border-radius: 6px; font-family: Hack NF; text-decoration: none; color:white;}
+        #Btn_return:hover{color: red;}
+        #Text-btn{margin: 25px; }
+        #Footer-status{text-align: center;}
+
+        #Lesson{
+            color:deepskyblue;  
+        }
+
+        #img1{margin-top: 10px; margin-bottom: 20px;}
+        #img2{margin-top: 10px; margin-bottom: 20px;}
+        #img3{margin-top: 10px; margin-bottom: 20px;}
+        #img4{margin-top: 10px; margin-bottom: 20px;}
+    </style>
 </head>
 
 <body>
+       
+    <h1 id="Lesson">Lesson 21 : File Paths</h1>
+    <h3>File Paths Example</h3>
+    <p>< img src="picture.jpg"></p>
+    <h5><mark>file is located in the same folder as the current page</mark></h5> 
+    <img id="img1" src="picture.jpg" width="240" height="426"> 
+      
+    <p>< img src="images/picture.jpg"></p>
+    <h5><mark>file is located in the images folder in the current folder</mark></h5> 
+    <img id="img2" src="images/picture.jpg" width="240" height="426"> 
+    
+    <p>< img src="/images/picture.jpg"> </p>
+    <h5><mark>file is located in the images folder at the root of the current web</mark></h5> 
+    <img id="img3" src="/images/picture.jpg" width="240" height="426"> 
+    
+    <p>< img src="../picture.jpg"> </p>
+    <h5><mark>file is located in the folder one level up from the current folder</mark></h5> 
+    <img id="img4" src="../picture.jpg" width="240" height="426"> 
+    
+    <h3>Html File Paths</h3>
+    <ul>
+        <li>Web pages</li>
+        <li>Images</li>
+        <li>Style sheets</li>
+        <li>JavaScript</li>
+    </ul>
+
+    <h3>Absolute File Paths</h3>
+    < img src="https://www.w3schools.com/images/picture.jpg" alt="Mountain"> <br>
+    <img src="https://www.w3schools.com/images/picture.jpg" alt="Mountain">
+
+    <h3>Relative File Paths</h3>
+    < img src="images/picture.jpg"> <br>
+    < img src="/images/picture.jpg" > <br>
+    < img src="../images/picture.jpg" > <br>
+    .. 
+    <h2>Ok L21 success </h2>
+    <br>
+
+
+    <h1 id="Lesson">Lesson 22 : Head</h1>
+    The HTML element is a container for the following elements: <br>
+    <p>title, meta, style, link, script, base</p>
+    
+    <h3>title element</h3>
+    ...
+    <h3>style element</h3>
+    ...
+    <h3>link element</h3>
+    ...
+    <h3>script element</h3>
+    ...
+    <h3>base element</h3>
+    ...
+    <h3>meta element</h3>
+    <h5><mark>Define the character set used</mark></h5>
+    < meta charset="UTF-8">
+    <h5><mark>Define keywords for search enginens</mark></h5>
+    < meta name="keywords" content="html, css, js">
+    <h5><mark>Define a description of your web page</mark></h5>
+    < meta name="description" content="Free web tutorials">
+    <h5><mark>Define page author of a page</mark></h5>
+    < meta name="author" content="inews">
+    <h5><mark>Refresh document every 30 seconds</mark></h5>
+    < meta http-equiv="Refresh" content="30">
+    <br>
+    <h5><mark>Setting the viewport</mark></h5>
+    < meta name="viewport" conntent="with=device-width, initial-scale=1.0">
+    
+    <h2>Ok L22 success </h2>
+    <br>
+
+
+    <h1 id="Lesson">Lesson 23: Layout</h1>
+    <h3>HTLM Layout Element</h3>
+    <table style="width: 100%;">
+        <tbody>
+            <tr>
+                <td style="width:225px; vertical-align:top">
+                    <img src="images/Layout_html_w3s.gif" alt="Layout_html" width="219" height="258">
+                </td>
+                <td style="vertical-align:top">
+                    <ul>
+                        <li><mark style="color: red; background-color: white; font-size: 20px;"> < header></mark> - Defines a header for a document or a section</li>
+                        <li><mark style="color: red; background-color: white; font-size: 20px;"> < nav></mark> - Defines a set of navigation links </li>
+                        <li><mark style="color: red; background-color: white; font-size: 20px;"> < section></mark> - Defines a section in a document</li>
+                        <li><mark style="color: red; background-color: white; font-size: 20px;"> < article></mark> - Define an independent, self-contained content</li>
+                        <li><mark style="color: red; background-color: white; font-size: 20px;"> < aside></mark> - Define content aside from the content (like a sidebar)</li>
+                        <li><mark style="color: red; background-color: white; font-size: 20px;"> < footer></mark> - Defines a footer for a document or a section</li>
+                        <li><mark style="color: red; background-color: white; font-size: 20px;"> < details></mark> - Defines additional details that the user can open and close on demand</li> 
+                        <li><mark style="color: red; background-color: white; font-size: 20px;"> < summary></mark> - Define a heading for the < details> element</li>
+                    </ul>
+                    
+                </td>
         
+            </tr>
+            
+        </tbody>
+    
+    </table>
+    <details>ct bo sung</details>
+    <nav>
+        day la the nav <br>
+    </nav>
+    <div>
+        <section> my is section </section>
+        <article> my is article </article>
+        <aside> my is aside </aside>
+    </div>
+    <h3>HTLM Layout Techniques</h3>
+    <ul>
+        <li>CSS Frameworks</li>
+        <li>CSS Float property</li>
+        <li>CSS flexbox</li>
+        <li>CSS grid</li>
+    </ul>
+    <h4>CSS Frameworks</h4> 
+    if you want to create tour layout fast, you can use a CSS FW, like W3.CSS or Bootstrap
+    <h4>CSS Float Layout</h4> 
+    Float is easy to learn - you just need to remember how the float and clear properties work
+    Disadvantages: Floating element are tied to the document flow
+    <h4>CSS Flexbox Layout</h4>
+    Use of flexbox ensures that elements behave predictably when the page layout must accommodate
+    different screen sizes and different display devices
+    <h4>CSS Grid Layout</h4>
+    The CSS Grid Layout Module offers a grid-based layout system, with rows and columns,
+    making it easier to design web pages without having to use floats and positioning
+
+    <h2>Ok L23 success </h2>
+    <br>
 
 
-
-<br><i><h5> time onstream w3s : 8h + 3h
-<br> All TIME COURSE : 11h
-<br><a style="color:red">status: off</a></h5></i>
 </body>
+
+<footer>
+    <div id="Footer-space"></div>
+    <article id="Footer-status">
+        <a href="Super.html" id="Btn_return" > <b id="Text-btn">Super</b></a>
+        <i><h5> time onstream w3s : 3h
+        <br> All TIME COURSE : 3h
+        <br><a style="color:red">status: off</a></h5></i>
+    </article>
+</footer>
 </html>
