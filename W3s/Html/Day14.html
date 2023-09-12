@@ -1,0 +1,269 @@
+<!-- Day 13     3/4/2022 -->
+<!Doctype html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Day 14 &ensp;:&ensp; 12/09/2023</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <script src="https://unpkg.com/boxicons@2.1.2/dist/boxicons.js"></script>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        *:before, *:after{
+            box-sizing: inherit;
+        }
+        #Footer-space{width: 100%; height: 80px;}
+        #Btn_return{background-color: bisque; border-radius: 6px; font-family: Hack NF; text-decoration: none; color:white;}
+        #Btn_return:hover{color: red;}
+        #Text-btn{margin: 25px; }
+        #Footer-status{text-align: center;}
+        code.codespan{
+            color: red;
+        }
+        div.codespan{
+            padding: 10px;
+            width: fit-content;
+            background-color: #E7E9EB;
+        }
+        #Lesson{
+            color:deepskyblue;  
+        }
+
+        div.Queri{
+            padding: 20px;
+        }
+        .Queri:before, .Queri:after{
+            content: "";
+            display: table;
+            clear: both;
+        }
+        .left, .right{        
+            padding: 20px;
+            float: left;
+            width: 20%;
+        }
+        .main{
+            padding: 20px;
+            float: left;
+            width: 60%;
+        }
+
+        @media screen and (max-width: 800px){
+            .left, .main, .right{
+                width: 100%;
+            }
+        }
+        /* testshow */
+        *{
+            box-sizing: border-box;
+        }
+        
+        .ts_body:before, .ts_body:after, .ts_paner:before, .ts_paner:after{
+            content: "";
+            display: table;
+            clear: both;
+        }
+        .ts_paner{
+            font-family: Verdana;
+            color: #aaaaaa;
+        }
+        .ts_header{
+            background-color: #E7E9EB ;
+            padding: 15px; 
+            text-align: center;
+        }
+        .left_link a{
+            background-color: #E7E9EB;
+            overflow: auto;
+            padding: 8px;
+            margin-top: 7px;
+            display: block;
+            width: 100%;
+            color: black;
+        }
+        .left_link{
+            float: left;
+            width: 20%;
+            text-align: center;
+        }
+        .main_content{
+            float: left;
+            width: 60%;
+            padding: 0 20px;
+        }
+        .right_about {
+            background-color: #E7E9EB;
+            float: left;
+            width: 20%;
+            height: 100%;
+            padding: 15px;
+            margin-top: 7px;
+            text-align: center;
+        }
+       
+
+        @media only screen and (max-width: 620px) {
+        /* For mobile phones: */
+        .left_link, .main_content, .right_about {
+             width: 100%;
+            }
+        }
+        .ts_footer p{
+            background-color: #E7E9EB;
+            text-align: center;
+            margin-top:7px;
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 id="Lesson">Lesson 24 : Responsive</h1>  
+
+
+    <h3>Setting The Viewport</h3>
+    <p>To create a responsive website, add the following <code class="codespan"><span><</span>meta<span>></span></code> tag to all your web pages:</p>
+    <div class="codespan">
+        <b>ex:</b>
+        <br>
+        <span><</span>
+        <span>meta name="viewport" content="width=device-width, initial-scale=1.0"</span>
+        <span>></span>
+    </div>
+
+    <br>
+    <h3>Responsive Images</h3>
+    <ul>
+        <li>
+            <h4>Using the width property</h4>
+            <p>If the CSS <code class="codespan">width</code> property is set to 100%, the image will be responsive and scale up and down:</p> 
+            <img src="picture.jpg" style="width: 100%;">
+            <div class="codespan">
+                <b>ex:</b>
+                <br>
+                <span><</span>
+                <span>img src="picture.jpg" style="width:100%;"</span>
+                <span>></span>
+            </div>
+            <p><b>notice:</b> the image can be scaled up to be larger than its original size. A better solution, in many case, will be to the <code class="codespan">max-width</code> property instead</p>
+        </li>
+
+        <li>
+            <h4>Using the max-width property</h4>
+            <p>If the <code class="codespan">max-width</code> property is set to 100%, the image will scale down if it has to, but never scale tup to be large than its original size:</p>
+            <img src="picture.jpg" style="max-width: 100%; height: auto;">
+            <div class="codespan">
+                <b>ex:</b>
+                <br>
+                <span><</span>
+                <span>img src="picture.jpg" style="max-width: 100%; height :auto;"</span>
+                <span>></span>
+            </div>
+        </li>
+
+        <li>
+            <h4>Show diffence images depending on browser width</h4>
+            <p>The html <code class="codespan"><span><</span>picture<span>></span></picture></code> element allows you to define different images for different browser window sizes </p>
+            <picture>
+                <source srcset="img_smallflower.jpg" media="(max-width: 600px)">
+                <source srcset="img_flowers.jpg" media="(max-width: 1500px)">
+                <source srcset="flowers.jpg">
+                <img src="img_flowers.jpg" alt="Flowers">
+            </picture>
+            
+            <div class="codespan">
+             <b>ex:</b>
+             <pre>
+    <span><</span><span>picture</span><span>></span>
+        <span><</span>source srcset:"img_smallflower.jpg media="(max-width: 600px)"<span>></span>
+        <span><</span>source srcset:"img_flowers.jpg media="(max-width: 1500px)"<span>></span>
+        <span><</span>source srcset:"flowers.jpg<span>></span>
+        <span><</span>img src="img_smallflower" alt="Flowers"<span>></span>
+    <span><</span><span>/picture</span><span>></span>
+             </pre>    
+            </div>
+        </li>
+
+    </ul>
+    
+    
+    <br>
+    <h3>Responsive Text Size</h3>
+    <p>The text size can be set with a "vw", which means the "viewport width"</p>
+    <h1 style="font-size: 10vw;">Jngin Ah</h1>
+    <div class="codespan">
+        <b>ex:</b>
+        <br>
+        <span><</span>
+        <span>h1 style="font-size: 10vw;"</span>
+        <span>></span>
+        <span><</span>
+        <span>/h1</span>
+        <span>></span>
+    </div>
+
+
+    <br>
+    <h3>Media Queries</h3>
+    <p>In addtion to resizee text and images, it is alse common to use media queries in responsive web pages</p>
+    
+    <div class="Queri">
+        <div class="left" style="background-color: blue;">Left Menu</div>
+        <div class="main" style="background-color: beige;">Main Content</div>
+        <div class="right" style="background-color: green;">Right Content</div>      
+    </div>
+    
+
+    <br>
+    <h3>Responsive Web Page</h3>
+    <!-- testshow -->
+    <div class="ts_paner">
+        <div class="ts_header"><h1>Jngin Ah</h1></div>
+        <div class="ts_body">
+            <div class="left_link">
+                <a href="">Link 1</a>
+                <a href="">Link 2</a>
+                <a href="">Link 3</a>
+                <a href="">Link 4</a>
+            </div>
+            <div class="main_content">
+                <h2>Ip WWW</h2>
+                <p>show ip config: notice</p>
+            </div>
+            <div class="right_about">
+                <h2>About</h2>
+                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. </p>
+            </div>
+        </div>
+
+        <div class="ts_footer">
+           <p>© copyright jngin_ah.com</p> 
+        </div>
+        
+    </div>
+
+
+    <br>
+    <h3>Responsive Web Design</h3>
+    <ul>
+        <li>Frameworks</li>
+        <li>Bootstrap</li>
+    </ul>
+
+
+    <h2>Ok L24 success </h2>
+    <br>
+
+    </body>
+
+<footer>
+    <div id="Footer-space"></div>
+    <article id="Footer-status">
+        <a href="Super.html" id="Btn_return" > <b id="Text-btn">Super</b></a>
+        <i><h5> time onstream w3s : 3h + 5h
+        <br> All TIME COURSE : 8h
+        <br><a style="color:red">status: off</a></h5></i>
+    </article>
+</footer>
+</html>
