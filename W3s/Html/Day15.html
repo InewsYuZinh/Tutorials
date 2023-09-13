@@ -1,0 +1,356 @@
+<!-- Day 15     13/09/2023 -->
+<!Doctype html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Day 15 &ensp;:&ensp; 13/09/2023</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <script src="https://unpkg.com/boxicons@2.1.2/dist/boxicons.js"></script>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        *:before, *:after{
+            box-sizing: inherit;
+        }
+        #Footer-space{width: 100%; height: 80px;}
+        #Btn_return{background-color: bisque; border-radius: 6px; font-family: Hack NF; text-decoration: none; color:white;}
+        #Btn_return:hover{color: red;}
+        #Text-btn{margin: 25px; }
+        #Footer-status{text-align: center;}
+        #Footer-contact{font-family: monospace; font-size: medium;}
+       
+        code.codespan{
+            color: red;
+        }
+        div.codespan{
+            padding: 10px;
+            width: fit-content;
+            background-color: #E7E9EB;
+        }
+        div.codeboard{
+            padding-left: 10px;
+            border-left: 4px solid #04AA6D;
+        }
+        div.notice{
+            margin-top: 15px;
+            background-color: antiquewhite;
+            width: fit-content;
+            text-align: center;
+        }
+        div.auth_contact{
+            border-left: 4px solid #04AA6D; 
+            padding-left: 10px;        
+        }
+        #Lesson{
+            color:deepskyblue;  
+        }
+
+      
+    </style>
+</head>
+
+<body>
+
+    <h1 id="Lesson">Lesson 25 : Computercode</h1>  
+
+    <h3>Computercode elements</h3>
+
+    <ul>
+        <!-- <kbd> -->
+        <li>
+            <h4><span><</span>kbd<span>></span> for keyboard input</h4>
+            <p>
+                The html <code class="codespan"><span><</span>kbd<span>></span></code> element is used to define keyboard input. The content inside is displayed in the browser's default monospace font
+            </p>
+            <!-- cod -->
+                <div class="codeboard">
+                    <p>Save the document by pressing <kbd>Ctrl + S</kbd></p>
+                </div>
+            <!-- endcod -->
+            <div class="codespan">
+                <b>ex:</b>
+                <br>
+                <span><</span>p<span>></span>Save the document by pressing <span><</span>kbd<span>></span>Ctrl + S<span><</span>/kbd<span>></span><span><</span>p<span>></span>
+            </div>
+
+        </li>
+        <!-- <samp> -->
+        <li>
+            <h4><span><</span>samp<span>></span> for program output</h4>
+            <p>
+                The html <code class="codespan"><span><</span>samp<span>></span></code> element is used to define sample output. The content inside i displayed in the browser's default monospace font.
+            </p>
+            <!-- cod -->
+                <div class="codeboard">
+                <p>Message from my computer:</p>
+                <p><samp>File not found. <br>Press F1 to continue</samp></p>    
+                </div>
+            <!-- endcod -->
+            <div class="codespan">
+                <b>ex:</b>
+                <br>
+                <span><</span>p<span>></span>Message from my computer:<span><</span>/p<span>></span> <br>
+                <span><</span>p<span>></span><span><</span>samp<span>></span> File not found. <span><</span>br<span>></span> Press F1 to continue <span><</span>/samp<span>></span><span><</span>/p<span>></span>
+            </div>
+
+        </li>
+        <!-- <code> -->
+        <li>
+            <h4><span><</span>code<span>></span> for computer code</h4>
+            <p>
+                <code class="codespan"><span><</span>code<span>></span></code> element is used to define a piece of computer code.
+            </p>
+            <!-- cod -->
+                <div class="codeboard">
+                <code>
+                    x = 5;
+                    y = 6;s
+                    z = x + y;
+                </code> 
+                </div>
+            <!-- endcod -->
+            <div class="codespan" style="margin-top: 5px;">
+                <b>ex:</b>
+                <br>
+                <pre>
+        <spann><</spann>code<spann>></spann>
+            x = 5;
+            y = 6;
+            z = x + y;
+        <span><</span>/code<span>></span>
+                </pre>
+            </div>
+        
+        </li>
+        <!-- <var> -->
+        <li>
+            <h4><span><</span>var<span>></span> for variables</h4>
+            <p>
+                The html <code class="codespan"><span><</span>var<span>></span></code> element is used to define a variable in programming or in a mathematical expression
+            </p>
+            <!-- cod -->
+                <div class="codeboard">
+                <p>The area of a triangle is: 1/2 x <var>b</var> x <var>h</var>, where <var>b</var> is the base, and <var>h</var> is the vertical height.</p>     
+                </div>
+            <!-- endcod -->
+            <div class="codespan">
+                <b>ex:</b>
+                <br>
+                <span><</span>p<span>></span>The area of a triangle is: 1/2 x <span><</span>var<span>></span>b<span><</span>/var<span>></span> x <span><</span>var<span>></span>h<span><</span>/var<span>></span>, where <span><</span>var<span>></span>b<span><</span>/var<span>></span> is the base, and <span><</span>var<span>></span>h<span><</span>/var<span>></span> is the vertical height. <span><</span>/p<span>></span>
+            </div>
+
+        </li>
+    </ul>
+    &ensp;<b style="color: rgb(211, 35, 35);">chapter summary:</b>
+    good-es day :)
+
+    <h2>Ok L25 success </h2>
+    <br>
+<!-- end25 -->
+
+
+
+    <h1 id="Lesson">Lesson 26 : Semantics</h1>  
+    <!-- let go !!  -->
+    <h3>What are Semantics Elements?</h3>
+    <p><b>non-semantics</b> element: <code class="codespan"><span><</span>div<span>></span></code> and <code class="codespan"><span><</span>span<span>></span></code> - Tell nothinng about its content </p> 
+    <p><b>Semantics</b> element: <code class="codespan"><span><</span>div<span>></span></code>, <code class="codespan"><span><</span>table<span>></span></code>, and <code class="codespan"><span><</span>article<span>></span></code> - Clearly define its content</p>
+
+
+    <br>
+    <h3>Semantic Elements in Html</h3>
+    <b><u>list:</u></b>
+    <dt>
+        <dd><span><</span>article<span>></span>     </dd>
+        <dd><span><</span>aside<span>></span>       </dd>
+        <dd><span><</span>details<span>></span>     </dd>
+        <dd><span><</span>figcaption<span>></span>  </dd>
+        <dd><span><</span>figure<span>></span>      </dd>
+        <dd><span><</span>footer<span>></span>      </dd>
+        <dd><span><</span>header<span>></span>      </dd>
+        <dd><span><</span>main<span>></span>        </dd>
+        <dd><span><</span>mark<span>></span>        </dd>
+        <dd><span><</span>nav<span>></span>         </dd>
+        <dd><span><</span>section<span>></span>     </dd>
+        <dd><span><</span>summary<span>></span>     </dd>
+        <dd><span><</span>time<span>></span>        </dd>
+    </dt>
+
+    <ul>
+        <!-- <section> -->
+        <li>
+            <h4><span><</span>section<span>></span> element</h4>
+            <p>
+                The <code class="codespan"> <span><</span>section<span>></span></code> element defines a section in a document 
+            </p>
+            <p>
+                <code class="codespan"><span><</span>section<span>></span></code> element can be used:
+            </p>
+            <dt>
+                <dd>- Chapters</dd>
+                <dd>- Introduction</dd>
+                <dd>- News items</dd>
+                <dd>- Contact information</dd>
+            </dt>
+            <!-- cod -->
+                <div class="codeboard">
+                <section>
+                    <h1>WWF</h1>
+                    <p>The World Wide Fund for Nature (WWF) is an international organization working on issues regarding the conservation</p>
+                </section>
+                <section>
+                    <h1>WWF's Panda symbol</h1>
+                    <p>The Panda has become the symbol of WWF.</p>
+                </section>
+                </div>
+            <!-- endcod -->
+            <div class="codespan">
+                <b>ex:</b>
+                <br>
+                <pre>
+        <span><</span>section<span>></span>
+        <span><</span>h1<span>></span>WWF<span><</span>/h1<span>></span>
+        <span><</span>p<span>></span>The World Wide Fund for Nature (WWF) is an international organization working on issues regarding the conservation<span><</span>/p<span>></span>
+        <span><</span>/section<span>></span>
+        ...
+                </pre>
+                
+
+            </div>
+
+
+        </li>   
+        <!-- <article> -->
+        <li>
+            <h4><span><</span>article<span>></span> element</h4>
+            <p>The <code class="codespan"><span><</span>article<span>></span></code> element specifies independent, self-contained content</p>
+            <p><code class="codespan"><span><</span>article<span>></span></code> element can be used:</p>
+            <dt>
+                <dd>- Forum post</dd>
+                <dd>- Blog posts</dd>
+                <dd>- User comments</dd>
+                <dd>- Product cards</dd>
+                <dd>- Newspaper article</dd>
+            </dt>
+            <!-- cod -->
+                <div class="codeboard">
+                    <article>
+                        <h2>Google Chrome</h2>
+                        <p>Google Chrome is a web browser developed by Google</p>
+                    </article>
+                    <article>
+                        <h2>Mozilla Firefox</h2>
+                        <p>Mozilla Firefox is an open-source web browser developed by Mozilla</p>
+                    </article>
+                    <article>
+                        <h2>Microsoft Edge</h2>
+                        <p>Microsoft Edge is a web browser developed by Microsoft</p>
+                    </article>
+                </div>
+            <!-- endcod -->
+            <div class="codespan">
+                <b>ex:</b>
+                <br>
+                <pre>
+        <span><</span>article<span>></span>
+        <span><</span>h2<span>></span>Google Chrome<span><</span>/h2<span>></span>
+        <span><</span>p<span>></span>Google Chrome is a web browser developed by Google<span><</span>/p<span>></span>
+        <span><</span>/article<span>></span>
+        <span><</span>article<span>></span>
+        <span><</span>h2<span>></span>Mozilla Firefox<span><</span>/h2<span>></span>
+        <span><</span>p<span>></span>Mozilla Firefox is an open-source web browser developed by Mozilla<span><</span>/p<span>></span>
+        <span><</span>/article<span>></span>
+        <span><</span>article<span>></span>
+        <span><</span>h2<span>></span>Microsoft Edge<span><</span>/h2<span>></span>
+        <span><</span>p<span>></span>Microsoft Edge is a web browser developed by Microsoft<span><</span>/p<span>></span>
+        <span><</span>/article<span>></span>
+                    
+                </pre>    
+            </div>
+
+        </li>
+            <!-- Notice -->
+            <div class="notice">
+            <u><b>notice:</b></u>
+            <p><i>Nesting <span><</span>article<span>></span> in <span><</span>section<span>></span> or Vice Versa? </i> 
+            <br>Can we use the definitions to decide how to nest those element? 
+            <br><c style="color: red;">No, we cannot!</c></p>
+            </div>
+        <!-- <header> -->
+        <li>
+            <h4><span><</span>header<span>></span> element</h4>
+            <p>The <code class="codespan"><span><</span>header<span>></span></code> element represents a container for introductory content or a set of navigational links</p>
+            <p><code class="codespan"><span><</span>header<span>></span></code> element typically contains:</p>
+            <dt>
+                <dd>- one or more heading elements h1-h6</dd>
+                <dd>- logo or icon</dd>
+                <dd>- authorship information</dd>
+            </dt>
+        </li>
+        <!-- <footer> -->
+        <li>
+            <h4><span><</span>footer<span>></span> element</h4>
+            <p>The <code class="codespan"><span><</span>footer<span>></span></code> element defines a footer for a document or setion.</p>
+            <p><code class="codespan"><span><</span>footer<span>></span></code> element typically contains:</p>
+            <dt>
+                <dd>- authorship information</dd>
+                <dd>- copyright information</dd>
+                <dd>- contact information</dd>
+                <dd>- sitemap</dd>
+                <dd>- back to top link</dd>
+                <dd>- related documents</dd>
+            </dt>
+
+        </li>
+        <!-- <nav> -->
+        <li>
+            <h4><span><</span>nav<span>></span> element</h4>
+            <p>The <code class="codespan"><span><</span>nav<span>></span></code> element defines a set of navigation links</p>
+            <div class="codeboard">
+                <nav>
+                    <a href="/html/">HTML     </a>  |
+                    <a href="/css/">CSS       </a>  |
+                    <a href="/js/">JS         </a>  |
+                    <a href="/jquery/">JQUERY </a>  
+                </nav>
+            </div>
+            <div class="codespan">
+                <b>ex:</b>
+                <br>
+                <pre>
+        <span><</span>nav<span>></span>
+            <span><</span>a href="/html/"<span>></span>  HTML   <span><</span>/a<span>></span>  |
+            <span><</span>a href="/css/"<span>></span>   CSS    <span><</span>/a<span>></span>  |
+            <span><</span>a href="/js/"<span>></span>    JS     <span><</span>/a<span>></span>  |
+            <span><</span>a href="/jquery/"<span>></span>JQUERY <span><</span>/a<span>></span>  
+        <span><</span>/nav<span>></span>
+                </pre>
+            </div>
+
+        </li>
+        <!-- <aside> -->
+        <li>
+
+        </li>
+    </ul>
+</body>
+
+<footer>
+    <div id="Footer-space"></div>
+    <section id="Footer-contact">
+        <div class="auth_contact">
+            <p>Author: &ensp;&ensp;&ensp; <b>Jngin_ah</b> <br>
+            Contact me: <a href="https://www.youtube.com/@jngin_ah">Jngin Channel</a> </p>
+        </div>
+    </section>
+    <article id="Footer-status">
+        <a href="Super.html" id="Btn_return" > <b id="Text-btn">Super</b></a>
+        <i><h5> time onstream w3s : 8h + 8h
+        <br> All TIME COURSE : 16h
+        <br><a style="color:red">status: off</a></h5></i>
+    </article>
+   
+   
+</footer>
+</html>
