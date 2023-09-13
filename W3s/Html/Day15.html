@@ -18,6 +18,8 @@
         #Btn_return:hover{color: red;}
         #Text-btn{margin: 25px; }
         #Footer-status{text-align: center;}
+        #Footer-contact{font-family: monospace; font-size: medium;}
+       
         code.codespan{
             color: red;
         }
@@ -35,6 +37,10 @@
             background-color: antiquewhite;
             width: fit-content;
             text-align: center;
+        }
+        div.auth_contact{
+            border-left: 4px solid #04AA6D; 
+            padding-left: 10px;        
         }
         #Lesson{
             color:deepskyblue;  
@@ -264,25 +270,87 @@
             </div>
 
         </li>
-        <!-- Notice -->
+            <!-- Notice -->
             <div class="notice">
             <u><b>notice:</b></u>
-            <p><i>Nesting <span><</span>article<span>></span> in <span><</span>section<span>></span> or Vice Versa? </i></p> 
-            <p>Can we use the definitions to decide how to nest those element? </p>
-            <p style="color: red;">No, we cannot!</p>
+            <p><i>Nesting <span><</span>article<span>></span> in <span><</span>section<span>></span> or Vice Versa? </i> 
+            <br>Can we use the definitions to decide how to nest those element? 
+            <br><c style="color: red;">No, we cannot!</c></p>
             </div>
-        
+        <!-- <header> -->
+        <li>
+            <h4><span><</span>header<span>></span> element</h4>
+            <p>The <code class="codespan"><span><</span>header<span>></span></code> element represents a container for introductory content or a set of navigational links</p>
+            <p><code class="codespan"><span><</span>header<span>></span></code> element typically contains:</p>
+            <dt>
+                <dd>- one or more heading elements h1-h6</dd>
+                <dd>- logo or icon</dd>
+                <dd>- authorship information</dd>
+            </dt>
+        </li>
+        <!-- <footer> -->
+        <li>
+            <h4><span><</span>footer<span>></span> element</h4>
+            <p>The <code class="codespan"><span><</span>footer<span>></span></code> element defines a footer for a document or setion.</p>
+            <p><code class="codespan"><span><</span>footer<span>></span></code> element typically contains:</p>
+            <dt>
+                <dd>- authorship information</dd>
+                <dd>- copyright information</dd>
+                <dd>- contact information</dd>
+                <dd>- sitemap</dd>
+                <dd>- back to top link</dd>
+                <dd>- related documents</dd>
+            </dt>
 
+        </li>
+        <!-- <nav> -->
+        <li>
+            <h4><span><</span>nav<span>></span> element</h4>
+            <p>The <code class="codespan"><span><</span>nav<span>></span></code> element defines a set of navigation links</p>
+            <div class="codeboard">
+                <nav>
+                    <a href="/html/">HTML     </a>  |
+                    <a href="/css/">CSS       </a>  |
+                    <a href="/js/">JS         </a>  |
+                    <a href="/jquery/">JQUERY </a>  
+                </nav>
+            </div>
+            <div class="codespan">
+                <b>ex:</b>
+                <br>
+                <pre>
+        <span><</span>nav<span>></span>
+            <span><</span>a href="/html/"<span>></span>  HTML   <span><</span>/a<span>></span>  |
+            <span><</span>a href="/css/"<span>></span>   CSS    <span><</span>/a<span>></span>  |
+            <span><</span>a href="/js/"<span>></span>    JS     <span><</span>/a<span>></span>  |
+            <span><</span>a href="/jquery/"<span>></span>JQUERY <span><</span>/a<span>></span>  
+        <span><</span>/nav<span>></span>
+                </pre>
+            </div>
+
+        </li>
+        <!-- <aside> -->
+        <li>
+
+        </li>
     </ul>
 </body>
 
 <footer>
     <div id="Footer-space"></div>
+    <section id="Footer-contact">
+        <div class="auth_contact">
+            <p>Author: &ensp;&ensp;&ensp; <b>Jngin_ah</b> <br>
+            Contact me: <a href="https://www.youtube.com/@jngin_ah">Jngin Channel</a> </p>
+        </div>
+    </section>
     <article id="Footer-status">
         <a href="Super.html" id="Btn_return" > <b id="Text-btn">Super</b></a>
-        <i><h5> time onstream w3s : 8h + 
-        <br> All TIME COURSE : 
-        <br><a style="color:green">status: on</a></h5></i>
+        <i><h5> time onstream w3s : 8h + 8h
+        <br> All TIME COURSE : 16h
+        <br><a style="color:red">status: off</a></h5></i>
     </article>
+   
+   
 </footer>
 </html>
