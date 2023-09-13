@@ -26,6 +26,10 @@
             width: fit-content;
             background-color: #E7E9EB;
         }
+        div.codeboard{
+            padding-left: 10px;
+            border-left: 4px solid #04AA6D;
+        }
         #Lesson{
             color:deepskyblue;  
         }
@@ -44,12 +48,14 @@
         <!-- <kbd> -->
         <li>
             <h4><span><</span>kbd<span>></span> for keyboard input</h4>
-            <!-- cod -->
             <p>
                 The html <code class="codespan"><span><</span>kbd<span>></span></code> element is used to define keyboard input. The content inside is displayed in the browser's default monospace font
             </p>
+            <!-- cod -->
+                <div class="codeboard">
+                    <p>Save the document by pressing <kbd>Ctrl + S</kbd></p>
+                </div>
             <!-- endcod -->
-            <p>Save the document by pressing <kbd>Ctrl + S</kbd></p>
             <div class="codespan">
                 <b>ex:</b>
                 <br>
@@ -64,8 +70,10 @@
                 The html <code class="codespan"><span><</span>samp<span>></span></code> element is used to define sample output. The content inside i displayed in the browser's default monospace font.
             </p>
             <!-- cod -->
-            <p>Message from my computer:</p>
-            <p><samp>File not found. <br>Press F1 to continue</samp></p>
+                <div class="codeboard">
+                <p>Message from my computer:</p>
+                <p><samp>File not found. <br>Press F1 to continue</samp></p>    
+                </div>
             <!-- endcod -->
             <div class="codespan">
                 <b>ex:</b>
@@ -82,11 +90,13 @@
                 <code class="codespan"><span><</span>code<span>></span></code> element is used to define a piece of computer code.
             </p>
             <!-- cod -->
-            <code>
-                x = 5;
-                y = 6;s
-                z = x + y;
-            </code>
+                <div class="codeboard">
+                <code>
+                    x = 5;
+                    y = 6;s
+                    z = x + y;
+                </code> 
+                </div>
             <!-- endcod -->
             <div class="codespan" style="margin-top: 5px;">
                 <b>ex:</b>
@@ -108,7 +118,9 @@
                 The html <code class="codespan"><span><</span>var<span>></span></code> element is used to define a variable in programming or in a mathematical expression
             </p>
             <!-- cod -->
-            <p>The area of a triangle is: 1/2 x <var>b</var> x <var>h</var>, where <var>b</var> is the base, and <var>h</var> is the vertical height.</p>
+                <div class="codeboard">
+                <p>The area of a triangle is: 1/2 x <var>b</var> x <var>h</var>, where <var>b</var> is the base, and <var>h</var> is the vertical height.</p>     
+                </div>
             <!-- endcod -->
             <div class="codespan">
                 <b>ex:</b>
@@ -123,12 +135,73 @@
 
     <h2>Ok L25 success </h2>
     <br>
-    <!-- end25 -->
+<!-- end25 -->
+
+
 
     <h1 id="Lesson">Lesson 26 : Semantics</h1>  
+    <!-- let go !!  -->
+    <h3>What are Semantics Elements?</h3>
+    <p><b>non-semantics</b> element: <code class="codespan"><span><</span>div<span>></span></code> and <code class="codespan"><span><</span>span<span>></span></code> - Tell nothinng about its content </p> 
+    <p><b>Semantics</b> element: <code class="codespan"><span><</span>div<span>></span></code>, <code class="codespan"><span><</span>table<span>></span></code>, and <code class="codespan"><span><</span>article<span>></span></code> - Clearly define its content</p>
 
-    
-    </body>
+
+    <br>
+    <h3>Semantic Elements in Html</h3>
+    <b><u>list:</u></b>
+    <dt>
+        <dd><span><</span>article<span>></span>     </dd>
+        <dd><span><</span>aside<span>></span>       </dd>
+        <dd><span><</span>details<span>></span>     </dd>
+        <dd><span><</span>figcaption<span>></span>  </dd>
+        <dd><span><</span>figure<span>></span>      </dd>
+        <dd><span><</span>footer<span>></span>      </dd>
+        <dd><span><</span>header<span>></span>      </dd>
+        <dd><span><</span>main<span>></span>        </dd>
+        <dd><span><</span>mark<span>></span>        </dd>
+        <dd><span><</span>nav<span>></span>         </dd>
+        <dd><span><</span>section<span>></span>     </dd>
+        <dd><span><</span>summary<span>></span>     </dd>
+        <dd><span><</span>time<span>></span>        </dd>
+    </dt>
+
+    <ul>
+        <!-- <section> -->
+        <li>
+            <h4><span><</span>section<span>></span> element</h4>
+            <p>
+                The <code class="codespan"> <span><</span>section<span>></span></code> element defines a section in a document 
+            </p>
+            <p>
+                <code class="codespan"><span><</span>section<span>></span></code> element can be used:
+            </p>
+            <dt>
+                <dd>- Chapters</dd>
+                <dd>- Introduction</dd>
+                <dd>- News items</dd>
+                <dd>- Contact information</dd>
+            </dt>
+            <!-- cod -->
+                <div class="codeboard">
+                <section>
+                    <h1>WWF</h1>
+                    <p>The World Wide Fund for Nature (WWF) is an international organization working on issues regarding the conservation</p>
+                </section>
+                <section>
+                    <h1>WWF's Panda symbol</h1>
+                    <p>The Panda has become the symbol of WWF.</p>
+                </section>
+                </div>
+            <!-- endcod -->
+        
+        </li>   
+        <!-- <article> -->
+        <li>
+
+
+        </li>
+    </ul>
+</body>
 
 <footer>
     <div id="Footer-space"></div>
