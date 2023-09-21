@@ -13,7 +13,7 @@
         *:before, *:after{
             box-sizing: inherit;
         }
-        #Footer-space{width: 100%; height: 80px;}
+        #Footer-space{width: 100%; height: 80px; clear: both;}
         #Btn_return{background-color: bisque; border-radius: 6px; font-family: Hack NF; text-decoration: none; color:white;}
         #Btn_return:hover{color: red;}
         #Text-btn{margin: 25px; }
@@ -53,7 +53,14 @@
         #Lesson{
             color:deepskyblue;  
         }
-
+        aside{
+            width: 30%;
+            padding-left: 15px;
+            margin-left: 15px;
+            float: right;
+            font-style: italic;
+            background-color: lightgray;
+        }
       
     </style>
 </head>
@@ -177,12 +184,12 @@
         <dd><span><</span>figure<span>></span>      </dd>
         <dd><span><</span>footer<span>></span>      </dd>
         <dd><span><</span>header<span>></span>      </dd>
-        <dd><span><</span>main<span>></span>        </dd>
+        <dd><span><</span>main<span>></span>: Specifies the main content of a document </dd>
         <dd><span><</span>mark<span>></span>        </dd>
         <dd><span><</span>nav<span>></span>         </dd>
         <dd><span><</span>section<span>></span>     </dd>
-        <dd><span><</span>summary<span>></span>     </dd>
-        <dd><span><</span>time<span>></span>        </dd>
+        <dd><span><</span>summary<span>></span>: Defines a visible heading for a <span><</span>details<span>></span> element </dd>
+        <dd><span><</span>time<span>></span>: Defines a date/time </dd>
     </dt>
 
     <ul>
@@ -339,12 +346,55 @@
         </li>
         <!-- <aside> -->
         <li>
-
+            <h4><span><</span>aside<span>></span> element</h4>
+            <p>The <code class="codespan"><span><</span>aside<span>></span></code> element define some content aside from the content it is place in</p>
+            <!-- cod -->
+            <div class="codeboard">
+                <aside>
+                    <h4>Etcot Center</h4>
+                    <p>Epcot is a theme park at Walt Disney World Resort featuring exciting attractions, international pavilions, award-winning fireworks and seasonal special events.</p>
+                </aside>
+                <p>My family and I visited The Epcot center this summer. The weather was nice, and Epcot was amazing! I had a great summer together with my family!</p>
+                <p>My family and I visited The Epcot center this summer. The weather was nice, and Epcot was amazing! I had a great summer together with my family!</p>   
+            </div>
+            <!-- endcod -->
+        </li>
+         <!-- <figure, figcaption> -->
+        <li style="clear: both;">
+            <h4><span><</span>figure<span>></span> and <span><</span>figcaption<span>></span> element</h4>
+            <p>The <code class="codespan"><spam><</spam>figure<spam>></spam></code> tap specifies self-contained content, like illustrations, diagrams, photo, code listings, ect.</p>
+            <p>The <code class="codespan"><span><</span>figcaption<span>></span></code> tag defines a caption for <code class="codespan"><spam><</spam>figure<spam>></spam></code> element. Can be placed as the first or as the last child of a <code class="codespan"><spam><</spam>figure<spam>></spam></code> element</p>
+            <p>The <code class="codespan"><spam><</spam>img<spam>></spam></code> element defines the actual image/inllustration</p>
+            <!-- cod -->
+            <div class="codeboard">
+                <figure>
+                    <img src="picture.jpg" alt="who" style="width: 20%;">
+                    <figcaption>Fig.1 - my <3 </figcaption>
+                </figure>
+            </div>
+            <!-- endcod -->
+            <div class="codespan">
+                <b>ex:</b>
+                <br>
+                <pre>
+        <span><</span>figure<span>></span>
+        <span><</span>img src="picture.jpg" alt="who" style="20%"<span>></span>
+        <span><</span>figcaption<span>></span>Fig.1 - my <3 <span><</span>/figcaption<span>></span>
+        <span><</span>/figure<span>></span> 
+                </pre>
+            </div>
         </li>
     </ul>
+
+
+    <h2>Ok L26 success </h2>
+    <br>
+<!-- end26 -->
+<!-- END B15: Computercode, Semantics -->
+
 </body>
 
-<footer>
+<footer style="clear: both;">
     <div id="Footer-space"></div>
     <section id="Footer-contact">
         <div class="auth_contact">
